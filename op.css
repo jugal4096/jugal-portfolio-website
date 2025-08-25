@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ticket-container {
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Upper Part */
+.ticket-top {
+    background: #16ebf7;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+    color: #2c2c2c;
+    font-size: 18px;
+}
+
+.monthly {
+    background-color: purple;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.ticket-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.fare {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.right {
+    float: right;
+}
+
+/* Stations with three language columns */
+.stations {
+    margin: 15px 0;
+}
+
+.station {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.ticket-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff; /* White background */
+    padding: 8px 16px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Scrolling text */
+.scroll-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    white-space: nowrap;
+    animation: scroll-left 8s linear infinite;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Logo styling */
+.railway-logo {
+    width: 40px;
+    height: auto;
+}
+
+.station-code {
+    display: inline-block;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: bold;
+    line-height: 25px;
+    flex-shrink: 0;
+}
+
+.s {
+    background-color: purple;
+}
+
+.d {
+    background-color:purple;
+}
+
+.station-names p {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 14px;
+}
+.parallel-line-text {
+    display: flex;
+    justify-content: space-between; /* keeps both texts on same row */
+    align-items: center;
+    position: relative;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+}
+
+.parallel-line-text::before,
+.parallel-line-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #000; /* black line */
+}
+
+.parallel-line-text::before {
+    top: 0; /* top line */
+}
+
+.parallel-line-text::after {
+    bottom: 0; /* bottom line */
+}
+
+/* Class Info */
+.class-info p {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Validity */
+.validity {
+    margin: 0% ;
+    font-size: 14px;
+}
+
+.validity .date {
+    color: red;
+    font-weight: bold;
+}
+
+/* Lower Part (White Background) */
+.ticket-bottom {
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ticket-bottom button {
+    background-color: #de5d2e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ticket-bottom button:hover {
+    background-color: #e63900;
+}
+
+.note {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.note a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.emergency {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
