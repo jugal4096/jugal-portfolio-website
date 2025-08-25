@@ -4,6 +4,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
+    overflow : hiiden
 }
 
 .ticket-container {
@@ -211,4 +212,5 @@ header h2 {
     font-weight: bold;
     margin-top: 10px;
 }
+
 
